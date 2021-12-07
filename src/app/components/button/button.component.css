@@ -1,0 +1,7 @@
+* {
+    font-size: large;
+}
+
+button:active {
+    transform: translateY(3px);
+}

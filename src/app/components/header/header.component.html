@@ -1,0 +1,9 @@
+<header>
+    <a routerLink="/">
+        <h1>{{ title }} <fa-icon [icon]="faFeather"></fa-icon></h1>
+    </a>
+    <app-button *ngIf="hasRoute('/quotes')" color="{{ showAddForm ? 'red' : 'green' }}" text="{{ showAddForm ? 'Close' : 'Add' }}" (btnClick)="toggleAddForm()"></app-button>
+    <a *ngIf="hasRoute('/')" routerLink="/quotes">
+        <app-button color="#7f4caf" text="My Pocket"></app-button>
+    </a>
+</header>

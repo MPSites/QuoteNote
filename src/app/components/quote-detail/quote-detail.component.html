@@ -1,0 +1,36 @@
+<div *ngIf="quote">
+    <div class="detail-wrapper">
+        <div  class="quote-detail">
+            <h3>{{ quote.category }}</h3>
+            
+            <div class="quote-detail-text">
+                " {{ quote.text }} "
+            </div>
+            <div class="quote-detail-desc">
+                <p class="quote-detail-auth"> ~ {{ quote.author }}</p>
+            </div>
+        
+        </div>
+    </div>
+    <div class="form-container">
+        <form class="change-form" (ngSubmit)="onSubmit()" #f="ngForm">
+            <label for="quote-textarea">Quote: </label>
+            <textarea id="quote-textarea" [(ngModel)]="quote.text" name="text" cols="30" rows="5" required></textarea>
+            <label for="quote-author">Author: </label>
+            <input type="text" id="quote-author" [(ngModel)]="quote.author" name="author" placeholder="author">
+            <label for="category">Topic</label>
+            <select id="category" [(ngModel)]="quote.category" name="category" required>
+                <option *ngFor="let cat of categories" [value]="cat.name">{{cat.name}}</option>
+            </select>
+            <div class="button-wrapper">
+                <input class="btn-change" type="submit" [disabled]="!f.valid" value="Change" />
+                <a routerLink="/quotes">
+                    <button class="btn-back">Go Back</button>
+                </a> 
+            </div>
+        </form>
+    </div>
+</div>
+<div *ngIf="!quote">
+    <app-unknown-id></app-unknown-id>
+</div>

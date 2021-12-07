@@ -1,0 +1,9 @@
+<p>console >></p>
+<div *ngIf="messageService.messages.length">
+    <h4>>> Messages</h4>
+    <div *ngFor="let message of messageService.messages">
+        <app-console-line [text]="message"></app-console-line>
+    </div>
+    <button class="clear" (click)="messageService.clear()">/console_clear</button>
+</div>
+

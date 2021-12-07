@@ -1,0 +1,36 @@
+* {
+    color: #fff;
+}
+
+p {
+    margin: 5px;
+}
+
+.gs-link {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    color: #7f4caf;
+    font-size: large;
+    transition: 0.3s;
+}
+
+.gs-link:hover {
+    color: #fff;
+}
+
+em {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+}
+
+.home-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #202020;
+    overflow: auto;
+}

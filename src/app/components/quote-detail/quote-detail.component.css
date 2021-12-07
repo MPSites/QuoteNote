@@ -1,0 +1,107 @@
+.detail-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.quote-detail {
+    width: 560px;
+    margin: 10px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #202020;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 20px;
+    
+}
+
+.quote-detail-desc {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: auto;
+    color: #fff;
+    font-style: italic;
+}
+
+.quote-detail-auth{
+    font-family: 'Pacifico', cursive;
+}
+
+.quote-detail-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    color: #fff;
+    font-style: italic;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 30px auto;
+    overflow: auto;
+    min-height: 300px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #202020;
+}
+
+input[type=text], textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-style: italic;
+    outline: none;
+}
+  
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+  
+div {
+    border-radius: 5px;
+    color: #fff;
+}
+
+h3 {
+
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    font-style: italic;
+    font-weight: normal;
+   
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-back {
+    background-color: #7f4caf;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

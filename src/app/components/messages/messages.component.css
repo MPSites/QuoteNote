@@ -1,0 +1,10 @@
+* {
+    color: rgb(74, 177, 34);
+    font-style: italic;
+}
+
+.clear {
+    background: none;
+    cursor: pointer;
+    border: none;
+}

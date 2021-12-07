@@ -1,0 +1,14 @@
+<div *ngIf="showAddForm" class="form-container">
+    <form class="add-form" (ngSubmit)="onSubmit()" #f="ngForm">
+        <label for="text">Quote</label>
+        <textarea type="text" name="text" ngModel id="text" placeholder="Add Quote..." cols="30" rows="5" required #text="ngModel"></textarea>
+        <div class="help-block" *ngIf="!text.valid && text.touched">Please add your quote text!</div>
+        <label for="author">Author</label>
+        <input type="text" name="author" ngModel id="author" />
+        <label for="category">Topic</label>
+        <select id="category" ngModel name="category" required>
+            <option *ngFor="let cat of categories" [value]="cat.name">{{cat.name}}</option>
+        </select>
+        <input type="submit" [disabled]="!f.valid" value="Save Quote" />
+    </form>
+</div>

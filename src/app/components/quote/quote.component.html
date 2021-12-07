@@ -1,0 +1,11 @@
+<div class="quote">
+    <h3>{{ quote.category }} <fa-icon (click)="onDelete(quote)" [ngStyle]="{ color: 'red'}" [icon]="faTimes"></fa-icon> </h3>
+    <a routerLink="/detail/{{ quote.id }}">
+        <div class="quote-text">
+            " {{ quote.text }} "
+        </div>
+        <div class="quote-desc">
+            <p class="quote-auth"> ~ {{ quote.author }}</p>
+        </div>
+    </a>
+</div>
